@@ -79,7 +79,6 @@ Second step open screen runweb for run web app.
 screen -r runweb
 python app.py
 ```
-```
 Copy the URL link or CTRL + click the URL link to the web app.
 1. On the web page, you can click Upload to upload your video and then click DRAW.
 2. After clicking DRAW, the website status will say Uploading after the video is uploaded.
@@ -88,4 +87,4 @@ Copy the URL link or CTRL + click the URL link to the web app.
 5. And if done, you will see the dashboard.
 6. The dashboard shows total numbers, number of men, number of women, number of categories (children, students, work and disabled), charts, and Google Sheets buttons.
 7. Click the Google Sheets button to see the person's duration, gender, category, and photo.
-```
+
