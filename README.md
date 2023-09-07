@@ -1,11 +1,12 @@
 # Web application count people
-### for create env and use this code. you will be create 3 env with anaconda 
-1. env for web app use flask and dash.
+### to create env and use this code You need to create 3 envs with anaconda. 
+1. env for run web app use flask and dash.
 2. env for backend code count people.
 3. env for call effnet api.
 
 ### env for web app
 ```
+screen -S runweb
 conda create -n runweb python=3.9.7
 conda activate runweb
 conda install -c anaconda flask
@@ -17,6 +18,7 @@ conda install -c conda-forge opencv
 conda install -c conda-forge moviepy
 ```
 ### env for backend code count people
+(if you in env runweb you must be deactivate env back to base for create new env.)
 ```
 conda create -n openmmpose python=3.8 -y
 conda activate openmmpose
