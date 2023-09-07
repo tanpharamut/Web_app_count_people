@@ -1,10 +1,10 @@
 # Web application count people
 ### to create env and use this code You need to create 3 envs with anaconda. 
-1. env for run web app use flask and dash.
-2. env for backend code count people.
-3. env for call effnet api.
+1. Env for run web app use flask and dash.
+2. Env for backend code count people.
+3. Env for call effnet api.
 
-### env for web app
+### Env for web app
 ```
 screen -S runweb
 conda create -n runweb python=3.9.7
@@ -16,9 +16,10 @@ conda install -c anaconda csvkit
 conda install -c anaconda dash
 conda install -c conda-forge opencv
 conda install -c conda-forge moviepy
+# press CTRL + A + D (quit screen)
 ```
-### env for backend code count people
-(if you in env runweb you must be deactivate env back to base for create new env.)
+### Env for backend code count people
+(if you in env runweb you must be deactivate env ( conda deactivate ) back to base for create new env.)
 ```
 conda create -n openmmpose python=3.8 -y
 conda activate openmmpose
@@ -52,7 +53,7 @@ pip install mmdet==2.28.2
 
 conda install natsort
 ```
-### env for call effnet api
+### Env for call effnet api
 ```
 screen -S effnet
 conda create --name usai python=3.6.9
@@ -64,4 +65,25 @@ pip install pandas
 pip install Pillow
 pip install scikit-image
 conda install cudatoolkit=10.1.243
+# press CTRL + A + D (quit screen)
 ```
+### Usage
+First step open screen effnet for run call api.
+```
+screen -r effnet
+python effnet_test.py
+# press CTRL + A + D (quit screen)
+```
+Second step open screen runweb for run web app.
+```
+screen -r runweb
+python app.py
+```
+Copy the URL link or CTRL + click the URL link to the web app.
+On the web page, you can click Upload to upload your video and then click DRAW.
+After clicking DRAW, the website status will say Uploading after the video is uploaded.
+You will be on the labels page. on the label page You will need to draw a box in the area where you want to count the number of people. and click Save.
+After clicking save You can click Count people to count the number of run and processing...
+And if done, you will see the dashboard.
+The dashboard shows total numbers, number of men, number of women, number of categories (children, students, work and disabled), charts, and Google Sheets buttons.
+Click the Google Sheets button to see the person's duration, gender, category, and photo.
