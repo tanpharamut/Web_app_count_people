@@ -81,7 +81,7 @@ python app.py
 ```
 Copy the URL link or CTRL + click the URL link to the web app.
 1. On the web page, you can click Upload to upload your video and then click DRAW.
-2. After clicking DRAW, the website status will say Uploading after the video is uploaded.
+2. After clicking DRAW, the website status will show Uploading. When the video is finished uploading.
 3. You will be on the labels page. on the label page You will need to draw a box in the area where you want to count the number of people. and click Save.
 4. After clicking save You can click Count people to count the number of run and processing...
 5. And if done, you will see the dashboard.
