@@ -59,7 +59,7 @@ screen -S effnet
 conda create --name usai python=3.6.9
 conda activate usai
 pip install -U --pre efficientnet
-pip install tensorflow-gpu==2.6.0
+pip install tensorflow-gpu==2.6.2
 pip install keras==2.4.3
 pip install pandas
 pip install Pillow
